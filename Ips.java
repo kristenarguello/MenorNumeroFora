@@ -9,7 +9,6 @@ public class Ips {
             BufferedReader lerArq = new BufferedReader(arq);
             String str = lerArq.readLine();
             while (str != null) {
-                //System.out.printf("%s\n", str);
                 arquivo += str + "-";
                 str = lerArq.readLine();
             }
@@ -23,12 +22,9 @@ public class Ips {
         ArrayList<Long> result = new ArrayList<Long>();
         for(String stringValue : stringArray) {
             try {
-                // Convert String to Long, and store it into Long array list.
                 result.add(Long.parseLong(stringValue));
             } catch(NumberFormatException nfe) {
                System.out.println("Could not parse " + nfe);
-                //Log.w("NumberFormat", "Parsing failed! " + stringValue + " can not be an Long");
-                //System.out.println("deu ruim");
             } 
         }       
         return result;
