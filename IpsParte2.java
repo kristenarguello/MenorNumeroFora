@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Ipesdesgracados {
+public class IpsParte2 {
     public static String leTXT() {
         String arquivo = "";
         try {
